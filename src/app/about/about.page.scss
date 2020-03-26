@@ -1,0 +1,36 @@
+.box{
+  margin-bottom: 15px;
+}
+.box h2{
+  color: #EC7263;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.box h2:before{
+  content: '//';
+  margin-right: 5px;
+}
+.box p{
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.hobby{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 25px;
+  background: #A75265;
+  position: relative;
+  font-size: 1.2em;
+}
+.hobby:before{
+  content: "\f004";
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}

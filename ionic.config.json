@@ -1,0 +1,8 @@
+{
+  "name": "mam",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

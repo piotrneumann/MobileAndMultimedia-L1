@@ -1,0 +1,35 @@
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Weight (kg/lbs)</ion-label>
+      <ion-input type="number" [(ngModel)]="weight"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Height (m/in)</ion-label>
+      <ion-input type="number" [(ngModel)]="height"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" (click)="calculateBMI()">Calculate</ion-button>
+  <ion-button expand="block" (click)="changeType()">Calculate imperial</ion-button>
+
+
+  <ion-card *ngIf="bmiValue">
+    <ion-card-header>
+      BMI Calculation
+    </ion-card-header>
+    <ion-card-content [ngClass]="color">
+      <p>Person: Weight {{this.weight}} kg/lbs, Height {{this.height}} m/in</p>
+      <p>BMI: {{bmiValue}}</p>
+      <p><strong>You are {{bmiMessage}}</strong></p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="error">
+    <ion-card-header>
+      <p><strong>{{bmiMessage}}</strong></p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+
+<ion-button expand="block"(click)="gotToAbout()">About</ion-button>
